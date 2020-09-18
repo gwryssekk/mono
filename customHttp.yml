@@ -1,5 +1,13 @@
-customHeaders:
-- pattern: '**/*'
-  headers:
-  - key: 'foo-repo'
-    value: 'bar'
+applications:
+- appRoot: rea
+  customHeaders:
+    - pattern: '**/*'
+      headers:
+        - key: foo-rea
+          value: bar
+- appRoot: other
+  customHeaders:
+    - pattern: '**/*'
+      headers:
+        - key: foo-other
+          value: bar
